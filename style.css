@@ -1,0 +1,186 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f5f5f5; */
+}
+
+p {
+    margin: 0;
+}
+
+p + p {
+    margin: 5px 0;
+}
+
+a {
+    text-decoration: underline;
+    color: rgb(0, 156, 221);
+}
+
+a.url {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.container {
+    position: relative;
+    max-width: 75%;
+    margin: 0 auto; /* Center the content within the page */
+}
+
+.split {
+    display: flex; /* Use flexbox to create a horizontal layout */
+    position: relative;
+}
+
+.background-image {
+    width: 100%;
+    display: block;
+}
+
+.left {
+    top: 50px;
+    left: 0;
+    width: 25%; /* Adjust the width of the left pane */
+    background-color: rgb(0, 74, 117);
+    color: #fff;
+    padding: 20px;
+}
+
+section {
+    position: relative;
+}
+
+section + section {
+    margin-top: 20px;
+}
+
+.left h3 {
+    text-decoration: underline;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.profile-picture {
+    width: 300px; /* Adjust the size of the profile picture */
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.profile-picture-container {
+    height: 50px; /* .profile-picture height (300px) - .profile-picture-container top (-250px)*/
+    position: relative;
+    top: -250px;
+    text-align: center;
+    z-index: 1;
+}
+
+.below-profile-picture {
+    position: relative;
+}
+
+.name {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.address {
+    margin-top: 20px;
+    color: #eee;
+    font-family: 'Arial Narrow';
+}
+
+/* .social-icons {
+    display: flex;
+    justify-content: center;
+} */
+
+/* .social-icons a {
+    color: rgb(0, 156, 221);
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+} */
+
+/* .social-icons a:hover {
+    color: #fff;
+} */
+
+.social-icons {
+    /* display: flex; */
+    text-align: left;
+}
+
+
+.social-icons i {
+    color: rgb(0, 156, 221);
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    vertical-align:sub;
+    transition: color 0.3s ease-in-out;
+}
+
+.affiliations {
+    text-align: center;
+}
+.affiliation {
+    height: 50px;
+    margin: 10px;
+    /* make the affiliations centered */
+}
+
+.unica-container {
+    height: 50px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.right {
+    width: 100%;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.right p {
+    text-align: justify;;
+}
+
+.right h2 {
+    color:rgb(0, 74, 117);
+    padding: 0;
+    margin: 0 0 0 20px;
+}
+
+.right h3 {
+    margin: 0 0 10px 0;
+}
+
+.right h3 + p {
+    margin-top: 5px;
+}
+
+.right td {
+    padding: 10px
+}
+
+.right section>p {
+    padding: 10px;
+}
+
+table.dated-list td:nth-child(1) {
+    width: 150px;
+    text-align: right;
+    vertical-align: top;
+}
+
+hr {
+    margin: 10px 20% 0 0;
+    color:rgb(0, 156, 221)
+}
+
+/* Add more styling as needed */
