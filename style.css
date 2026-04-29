@@ -1,17 +1,30 @@
+:root {
+    --primary-color: rgb(0, 74, 117);
+    --accent-color: rgb(0, 156, 221);
+    --bg-light: #f8f8f8;
+    --text-main: #333;
+    --text-light: #eee;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-main);
     margin: 0;
     padding: 0;
 }
 
 .container {
     position: relative;
-    width: 1300px;
-    margin: 0 auto; /* Center the content within the page */
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .split {
-    display: flex; /* Use flexbox to create a horizontal layout */
+    display: flex;
+    /* Use flexbox to create a horizontal layout */
     position: relative;
 }
 
@@ -19,13 +32,15 @@ p {
     margin: 0;
 }
 
-p + p {
+p+p {
     margin: 5px 0;
 }
 
 a {
     text-decoration: underline;
-    color: rgb(0, 156, 221);
+    color: var(--primary-color);
+    /* color: rgb(77, 125, 145); */
+    /* color: rgb(0, 156, 221); */
 }
 
 a.url {
@@ -39,25 +54,23 @@ a.url {
 }
 
 .left {
-    top: 50px;
-    left: 0;
-    width: 25%; /* Adjust the width of the left pane */
-    background-color: rgb(0, 74, 117);
+    width: 30%;
+    background-color: var(--primary-color);
     color: #fff;
-    padding: 20px;
+    padding: 30px;
 }
 
 .right {
-    width: 75%;
-    padding: 20px;
-    background-color: #f8f8f8;
+    width: 70%;
+    padding: 40px;
+    background-color: #fff;
 }
 
 section {
     position: relative;
 }
 
-section + section {
+section+section {
     margin-top: 20px;
 }
 
@@ -68,14 +81,16 @@ section + section {
 }
 
 .profile-picture {
-    width: 300px; /* Adjust the size of the profile picture */
+    width: 300px;
+    /* Adjust the size of the profile picture */
     height: 300px;
     border-radius: 50%;
     border: 5px solid #fff;
 }
 
 .profile-picture-container {
-    height: 50px; /* .profile-picture height (300px) - .profile-picture-container top (-250px)*/
+    height: 50px;
+    /* .profile-picture height (300px) - .profile-picture-container top (-250px)*/
     position: relative;
     top: -250px;
     text-align: center;
@@ -126,13 +141,14 @@ section + section {
     font-size: 24px;
     margin: 0 10px;
     text-decoration: none;
-    vertical-align:sub;
+    vertical-align: sub;
     transition: color 0.3s ease-in-out;
 }
 
 .affiliations {
     text-align: center;
 }
+
 .affiliation {
     height: 50px;
     margin: 10px;
@@ -146,11 +162,11 @@ section + section {
 }
 
 .right p {
-    text-align: justify;;
+    text-align: justify;
 }
 
 .right h2 {
-    color:rgb(0, 74, 117);
+    color: var(--primary-color);
     padding: 0;
     margin: 0 0 0 20px;
 }
@@ -159,7 +175,7 @@ section + section {
     margin: 0 0 10px 0;
 }
 
-.right h3 + p {
+.right h3+p {
     margin-top: 5px;
 }
 
@@ -179,8 +195,8 @@ table.dated-list td:nth-child(1) {
 }
 
 hr {
-    margin: 10px 20% 0 0;
-    color:rgb(0, 156, 221)
+    margin: 10px 0 20px 0;
+    border: 0;
+    border-top: 2px solid var(--accent-color);
+    width: 100px;
 }
-
-/* Add more styling as needed */
